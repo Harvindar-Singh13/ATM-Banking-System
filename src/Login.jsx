@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Login({ onLogin }) {
   const [pin, setPin] = useState("1234");
-  const [enteredpin, setEnteredpin] = useState();
+  const [enteredpin, setEnteredpin] = useState("");
 
   function handleClick() {
     let Enterpin = Number(pin);
