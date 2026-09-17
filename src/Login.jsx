@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Login({ onLogin }) {
   const [pin, setPin] = useState("1234");
+  // let pin ="1234"
   const [enteredpin, setEnteredpin] = useState("");
   const [message, setMessage] = useState("");
 
