@@ -3,7 +3,7 @@ import { useState } from "react";
 import Login from "./Login";
 
 function App() {
-  const [balance, setBalance] = useState(1000);
+  const [balance, setBalance] = useState(100000);
   const [amount, setAmount] = useState("");
   const [message, setMessage] = useState("");
   const [withdraw, setWithdraw] = useState("");

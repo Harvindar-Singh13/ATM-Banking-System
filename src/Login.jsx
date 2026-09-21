@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function Login({ onLogin }) {
   const [pin, setPin] = useState("1234");
-  // let pin ="1234"
   const [enteredpin, setEnteredpin] = useState("");
   const [message, setMessage] = useState("");
 
@@ -53,7 +52,7 @@ function Login({ onLogin }) {
               type="password"
               inputMode="numeric"
               maxLength="4"
-              placeholder="••••"
+              placeholder="****"
               value={enteredpin}
               onChange={(e) => setEnteredpin(e.target.value)}
               className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-4 py-3.5 text-center text-xl font-bold tracking-[0.5em] outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100"
