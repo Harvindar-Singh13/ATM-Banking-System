@@ -16,6 +16,7 @@ function App() {
     if (withdrawal <= balance && withdrawal % 100 === 0) {
       setBalance(balance - withdrawal);
       setWithdraw(withdrawal);
+      setAmount("");
       setMessage("withdrawal successful");
     } else {
       setMessage("invalid amount");
@@ -28,6 +29,7 @@ function App() {
     if (addAmount > 0 && addAmount % 100 === 0) {
       setBalance(balance + addAmount);
       setDeposit(addAmount);
+      setDeposit("");
       setMessage("Deposit successful");
     } else {
       setMessage("Invaild amount");
@@ -220,6 +222,7 @@ function App() {
 
                 <button
                   onClick={handleDeposit}
+             
                   className="rounded-xl bg-green-600 py-3.5 font-bold text-white shadow-lg shadow-green-200 transition hover:bg-green-700 active:scale-95 cursor-pointer"
                 >
                   + Deposit
@@ -230,6 +233,7 @@ function App() {
                   className="rounded-xl bg-red-500 py-3.5 font-bold text-white shadow-lg shadow-red-200 transition hover:bg-red-600 active:scale-95 cursor-pointer"
                 >
                   − Withdraw
+
                 </button>
 
               </div>
